@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <style>
+        button{
+            background-color: #1a237e !important;
+            color: white !important;
+        }
+        .profile-header {
+            background: linear-gradient(to right, #1a237e, #283593);
+            color: white;
+            padding: 2rem;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 3px solid white;
+        }
+        .section-title {
+            color: #1a237e;
+            font-weight: bold;
+            border-bottom: 2px solid #1a237e;
+            padding-bottom: 0.5rem;
+        }
+        .container-fluid {
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Profile Header with Carousel -->
+        <div id="profileCarousel" class="carousel slide profile-header mb-4" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row align-items-center">
+                        <div class="col-md-3">
+                            <img src="profile-image.png" class="profile-img rounded" alt="Profile Photo">
+                        </div>
+                        <div class="col-md-9">
+                            <h1>Shatadru Mukhopadhyay</h1>
+                            <h3>Aspiring SDE</h3>
+                            <div class="row mt-3">
+                                <div class="col-md-6">
+                                    <p>Phone: +91-9231455678</p>
+                                    <p>Email: shatadruforwork@gmail.com</p>
+                                    <p>LinkedIn: in/Shatadru</p>
+                                    <p>Location: Kolkata,India</p>
+                                    <p>Marital Status: Single</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>Date of Birth: 16 Decenber 2004</p>
+                                    <p>Gender: Male</p>
+                                    <p>Nationality: Indian</p>
+                                    <p>Religion: Hindu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Summary -->
+        <div class="mb-4">
+            <p class="text-justify">Computer Science Engineering student at SRM University with a strong foundation in web development and programming. Actively pursuing internship experiences in UI/UX and software development. Demonstrated ability to learn quickly and adapt to new technologies through hands-on project work. Passionate about creating user-friendly applications and solving complex problems through innovative solutions. Currently focused on expanding knowledge in full-stack development while maintaining academic excellence.</p>
+        </div>
+
+        <!-- Education Section with Collapse -->
+        <div class="mb-4">
+            <h2 class="section-title d-flex justify-content-between">
+                Education
+                <button class="btn btn-link" data-toggle="collapse" data-target="#educationCollapse">
+                    collapse
+                </button>
+            </h2>
+            <div id="educationCollapse" class="collapse show">
+                <!-- Education content -->
+                <div class="ml-3">
+                    <h4>BTech in CSE</h4>
+                    <p>SRM University, Andhra Pradesh</p>
+                    <p>2023-2027</p>
+                    <ul>
+                        <li>Building projects</li>
+                        <li>Learning new skills</li>
+                    </ul>
+                    <h4>Graduated High School</h4>
+                    <p>Army Public School, Barrackpore</p>
+                    <p>2022</p>
+                    <ul>
+                        <li>92%</li>
+                        <li>Participated in Co-curricular activities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Work Experience Section with Collapse -->
+        <div class="mb-4">
+            <h2 class="section-title d-flex justify-content-between">
+                Work Experience
+                <button class="btn btn-link" data-toggle="collapse" data-target="#workCollapse">
+                    collapse
+                </button>
+            </h2>
+            <div id="workCollapse" class="collapse show">
+                <h4>UI/UX Intern</h4>
+                <p>ABC technologies, New Delhi, India</p>
+                <p>2023-2024</p>
+                <ul>
+                    <li>Helped in designing the UI/UX of the new product</li>
+                    <li>collaborated with the working professionals</li>
+                    <li>Researched UX needs for the users</li>
+                </ul>
+                <h4>SDE Intern</h4>
+                <p>XYZ technologies, Kolkata, India</p>
+                <p>2024-present</p>
+                <ul>
+                    <li>Employed in developing dynamic and responsive Frontend</li>
+                    <li>Built robust backend for the Porduct</li>
+                    <li>Gained tons of experience</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Skills Section with Table -->
+        <div class="mb-4">
+            <h2 class="section-title d-flex justify-content-between">Skills
+                <button class="btn btn-link" data-toggle="collapse" data-target="#educationCollapse">
+                    collapse
+                </button>
+            </h2>
+            <table class="table table-bordered">
+                <tr>
+                    <th>Technical Skills</th>
+                    <th>Soft Skills</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Web Development</li>
+                            <li>Git and Github</li>
+                            <li>Devops</li>
+                            <li>Bash</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Stakeholder Engagement</li>
+                            <li>Leadership and Team Coordination</li>
+                            <li>Communication</li>
+                            <li>Problem-Solving</li>
+                            <li>Strategic Planning</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
+</body>
+</html>
+
